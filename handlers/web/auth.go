@@ -69,7 +69,7 @@ func (h *AuthHandler) HandleLogin(c *fiber.Ctx) error {
 	client, err := api.NewClient(
 		h.config.IMAP.Server,
 		h.config.IMAP.Port,
-		username,
+		email,
 		password,
 	)
 	if err != nil {
@@ -241,7 +241,7 @@ func (h *AuthHandler) CreateIMAPClient(c *fiber.Ctx) (*api.Client, error) {
 	return api.NewClient(
 		h.config.IMAP.Server,
 		h.config.IMAP.Port,
-		username,
+		creds.Email,
 		creds.Password,
 	)
 }
