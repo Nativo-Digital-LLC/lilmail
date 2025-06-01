@@ -1,0 +1,3 @@
+webmail.nd.com.do {
+  reverse_proxy lilmail:8080
+}

@@ -1,0 +1,18 @@
+[imap]
+server = "${IMAP_SERVER}"
+port = ${IMAP_PORT}
+tls = ${IMAP_TLS}
+
+[cache]
+folder = "${CACHE_FOLDER}"
+
+[jwt]
+secret = "${JWT_SECRET}"
+
+[encryption]
+key = "${ENCRYPTION_KEY}"
+
+[smtp]
+server = "${SMTP_SERVER}"
+port = ${SMTP_PORT}
+use_starttls = ${SMTP_STARTTLS}

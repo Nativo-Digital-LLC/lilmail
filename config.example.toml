@@ -1,0 +1,16 @@
+[imap]
+server = "ssl://mail.nd.com.do"
+port = 993
+tls = true
+
+[cache]
+folder = "./cache"
+
+[smtp]
+# If not specified, SMTP server will be derived from IMAP server
+server = "ssl://mail.nd.com.do"
+port = 465
+use_starttls = false
+
+[ssl]
+enabled = false
